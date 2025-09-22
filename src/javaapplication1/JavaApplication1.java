@@ -100,11 +100,16 @@ public class JavaApplication1 extends Application{
          btn ,label  
             );
           Scene scene = new Scene(root,300,500);
-          
+          scene.getStylesheets().add("style.css");
+          stage.setScene(scene);
+          stage.setTitle("Travel expense calculator");
+          stage.show();
         
         
         
-}
-                }
+        
+    }
 }
 
+        
+  

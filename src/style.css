@@ -1,0 +1,14 @@
+.root{
+    -fx-background-color: blue;
+    -fx-padding: 12;
+    -fx-font-size: 14pt
+}
+.label{
+    -fx-font-weight: bold;
+  
+}
+.buttton{
+    -fx-background-color: bread ;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
