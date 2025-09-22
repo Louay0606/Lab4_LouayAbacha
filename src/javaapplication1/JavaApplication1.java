@@ -5,6 +5,8 @@
 package javaapplication1;
 
 import javafx.application.Application;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
@@ -32,6 +34,10 @@ public class JavaApplication1 extends Application{
         TextField TaxiFees = new TextField();
         TextField RegistrationFees = new TextField();
         TextField LodgingFee = new TextField();
+        
+        Button btn = new Button("cALCULATE");
+        Label label = new Label();
+        
 }
 }
 
