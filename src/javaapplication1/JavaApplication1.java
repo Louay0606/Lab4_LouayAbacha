@@ -5,9 +5,11 @@
 package javaapplication1;
 
 import javafx.application.Application;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 /**
@@ -81,10 +83,24 @@ public class JavaApplication1 extends Application{
                 mssg+= "youve saved :" +(allowed - total) ;
             }
             label.setText(mssg);
-            
-         
+        });
         
-               
+        
+        //creating the display 
+         
+        VBox root = new VBox (8, 
+         new Label("Days:"), DaysField,
+         new Label("Airfare:") , AirfareField,
+         new Label("Car rental:"),  CarFeesField,
+         new Label("Miles driven:"),MilesField,
+         new Label("Parking fees:"),  PkFeesField,
+         new Label("Taxi fees:"),  TaxiFeesField,
+         new Label("Registration fees:"),  RegistrationFeesField,    
+         new Label("Lodging fees:"), LodgingFeeField,
+         btn ,label  
+            );
+          Scene scene = new Scene(root,300,500);
+          
         
         
         
