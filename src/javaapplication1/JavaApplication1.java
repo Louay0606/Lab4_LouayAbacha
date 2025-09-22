@@ -26,17 +26,33 @@ public class JavaApplication1 extends Application{
     @Override
     public void start(Stage stage)  {
         
-        TextField Days = new TextField();
-        TextField Airfare = new TextField();
-        TextField CarFees = new TextField();  
-        TextField Miles = new TextField();
-        TextField PkFees = new TextField();
-        TextField TaxiFees = new TextField();
-        TextField RegistrationFees = new TextField();
-        TextField LodgingFee = new TextField();
+        TextField DaysField = new TextField();
+        TextField AirfareField = new TextField();
+        TextField CarFeesField = new TextField();  
+        TextField MilesField = new TextField();
+        TextField PkFeesField = new TextField();
+        TextField TaxiFeesField = new TextField();
+        TextField RegistrationFeesField = new TextField();
+        TextField LodgingFeeField = new TextField();
         
         Button btn = new Button("cALCULATE");
         Label label = new Label();
+        
+        btn.setOnAction(e-> {
+            int days = Integer.parseInt(DaysField.getText());
+            double airfare = Double.parseDouble(AirfareField.getText());
+            double carfees = Double.parseDouble(CarFeesField.getText());
+            double miles = Double.parseDouble(MilesField.getText());
+            double pkfees = Double.parseDouble(PkFeesField.getText());
+            double txifees = Double.parseDouble(TaxiFeesField.getText());
+            double regisfees = Double.parseDouble(RegistrationFeesField.getText());
+            double lodginffees =Double.parseDouble(LodgingFeeField.getText());
+            
+            
+        }
+               
+        
+        
         
 }
 }
