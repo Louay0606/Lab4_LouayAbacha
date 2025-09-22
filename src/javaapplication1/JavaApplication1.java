@@ -31,7 +31,7 @@ public class JavaApplication1 extends Application{
         TextField PkFees = new TextField();
         TextField TaxiFees = new TextField();
         TextField RegistrationFees = new TextField();
-        TextField Miles = new TextField();
+        TextField LodgingFee = new TextField();
 }
 }
 
