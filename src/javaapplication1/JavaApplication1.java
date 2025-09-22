@@ -45,15 +45,42 @@ public class JavaApplication1 extends Application{
             double miles = Double.parseDouble(MilesField.getText());
             double pkfees = Double.parseDouble(PkFeesField.getText());
             double txifees = Double.parseDouble(TaxiFeesField.getText());
-            double regisfees = Double.parseDouble(RegistrationFeesField.getText());
+            double registrationfees = Double.parseDouble(RegistrationFeesField.getText());
             double lodginffees =Double.parseDouble(LodgingFeeField.getText());
+             
+            //used his own car
+            if( miles > 0 ){
+                txifees= 0;
+                carfees=0 ;
+            }else miles = 0 ;
             
+          //total spent
+            double total = (37 *days) 
+                    + pkfees 
+                    +txifees
+                    +  (lodginffees * days) 
+                    + (miles * 0.27) 
+                    + airfare 
+                    +carfees 
+                    + registrationfees;
             
-        }
+            //total allowes 
+            double allowed = (37 *days)  //meals
+                           +  airfare 
+                           + carfees
+                           + registrationfees
+                           +(Math.min(pkfees, 10 * days))
+                           +(Math.min(txifees, 20 * days))
+                           +(Math.min(lodginffees, 95) * days)
+                           +(miles * 0.27) ;
+            
+         
+        
                
         
         
         
 }
+                }
 }
 
