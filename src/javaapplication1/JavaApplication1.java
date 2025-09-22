@@ -74,6 +74,14 @@ public class JavaApplication1 extends Application{
                            +(Math.min(lodginffees, 95) * days)
                            +(miles * 0.27) ;
             
+            String mssg = "Total is : " + total +" The total allowed : " + allowed ;
+            if( total > allowed) {
+                mssg+= "Youve exedeed the allowed total by : " + (total-allowed) ;
+            } else {
+                mssg+= "youve saved :" +(allowed - total) ;
+            }
+            label.setText(mssg);
+            
          
         
                
